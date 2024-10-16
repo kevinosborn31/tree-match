@@ -6,15 +6,14 @@ TreeMatch is a web application that helps users find the ideal tree to plant in 
 
 ### Prerequisites
 
-- Node.js (>= 14.x)
-- npm or yarn
+- Node.js
+- npm
 
 ### Installation
-
-1. Clone the repository:
    git clone
    cd tree-match
    npm install
+   npm start
 
 ### API
 

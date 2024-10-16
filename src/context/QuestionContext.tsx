@@ -1,4 +1,4 @@
-import React, { createContext, useState, ReactNode, FC } from 'react';
+import { createContext, useState, ReactNode, FC } from 'react';
 import { Match } from '../interfaces/Match';
 import { Question } from '../interfaces/Question';
 
@@ -9,7 +9,14 @@ interface ContextProps {
     setMatch: (match: Match) => void;
 }
 
-const QuestionContext = createContext<ContextProps | undefined>(undefined);
+const defaultContext: ContextProps = {
+    currentQuestion: null,
+    match: null,
+    setCurrentQuestion: () => { },
+    setMatch: () => { },
+};
+
+const QuestionContext = createContext<ContextProps>(defaultContext);
 
 export const QuestionProvider: FC<{ children: ReactNode }> = ({ children }) => {
     const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
