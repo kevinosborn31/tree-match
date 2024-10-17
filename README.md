@@ -4,16 +4,21 @@ TreeMatch is a web application that helps users find the ideal tree to plant in 
 
 ## Getting Started
 
+### Tech used
+- React with Typescript
+- React testing library
+- Material UI
+
 ### Prerequisites
 
 - Node.js
 - npm
 
 ### Installation
-   git clone
-   cd tree-match
-   npm install
-   npm start
+- git clone
+- cd tree-match
+- npm install
+- npm start
 
 ### API
 
